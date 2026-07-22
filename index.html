@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Foods - Traditional & Authentic Kerala Recipes</title>
+    <meta name="description" content="Explore authentic, traditional recipes from Kerala. Discover breakfast staples, delicious breads, and flavorful curries from God's Own Country.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container" onclick="window.location.href='index.html'">
+            <span class="leaf">🌴</span> Kerala Foods
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero / Image Slider Section -->
+    <header class="hero">
+        <div class="slider-container">
+            <div id="slide1" class="slide active" style="background-image: url('images/slider1.jpg');"></div>
+            <div id="slide2" class="slide" style="background-image: url('images/slider2.jpg');"></div>
+            <div id="slide3" class="slide" style="background-image: url('images/slider3.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <span class="badge">Authentic Culinary Blog</span>
+            <h1>Experience the Taste of <span>Kerala Foods</span></h1>
+            <p>Embark on a flavorful journey through God's Own Country with traditional recipes, aromatic local spices, and time-honored cooking methods.</p>
+            <div class="hero-buttons">
+                <a href="articles.html" class="btn-primary">Explore Recipes</a>
+                <a href="about.html" class="btn-secondary">Our Story</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Statistics Section -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Authentic Spices</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Signature Recipes</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5k+</div>
+                <div class="stat-label">Happy Home Cooks</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipes Section -->
+    <section class="container">
+        <div class="section-header">
+            <h2>Featured Recipes</h2>
+            <p>Handpicked traditional recipes to bring the signature flavors of Kerala's kitchens straight to your home.</p>
+        </div>
+        
+        <div class="grid-recipes">
+            <!-- Appam Card -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breakfast</span>
+                    <img src="images/Food 1.jpg" alt="Appam">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 30 mins</span>
+                        <span>🔥 Easy</span>
+                    </div>
+                    <h3>Appam</h3>
+                    <p class="card-desc">Soft, fluffy rice pancakes with crispy edges, served traditionally with hot vegetable stew or creamy egg curry.</p>
+                    <div class="card-footer">
+                        <a href="article/food1.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puttu Card -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breakfast</span>
+                    <img src="images/Food 2.jpg" alt="Puttu">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 20 mins</span>
+                        <span>🔥 Medium</span>
+                    </div>
+                    <h3>Puttu</h3>
+                    <p class="card-desc">Steamed cylinders of ground rice and grated coconut, an iconic breakfast staple best paired with Kadala curry.</p>
+                    <div class="card-footer">
+                        <a href="article/food2.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Porotta Card -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breads</span>
+                    <img src="images/Food 5.jpg" alt="Porotta">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 45 mins</span>
+                        <span>🔥 Hard</span>
+                    </div>
+                    <h3>Porotta</h3>
+                    <p class="card-desc">Flaky, layered soft flatbread that pairs perfectly with delicious beef dry fry, chicken curry, or vegetable kurma.</p>
+                    <div class="card-footer">
+                        <a href="article/food5.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="container" style="padding-top: 0;">
+        <div class="newsletter-wrapper">
+            <div class="newsletter-content">
+                <h2>Join Our Culinary Circle</h2>
+                <p>Get the latest recipes, spice guides, and traditional cooking secrets delivered directly to your inbox weekly.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed successfully! Welcome onboard.'); this.reset();">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>🌴 Kerala Foods</h3>
+                <p>Celebrating the vibrant tastes, aromatic spices, and rich food heritage of Kerala. Recreate authentic flavors right in your home kitchen.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Story</a></li>
+                    <li><a href="articles.html">Browse Recipes</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> keralafoods@gmail.com</p>
+                <p><strong>Phone:</strong> +91 8075093487</p>
+                <p><strong>Location:</strong> Kochi, Kerala, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kerala Foods. All rights reserved.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Success Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Recipes - Kerala Foods</title>
+    <meta name="description" content="Browse authentic Kerala recipes. Search and filter through signature breakfast items, flaky breads, and delicious dishes.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container" onclick="window.location.href='index.html'">
+            <span class="leaf">🌴</span> Kerala Foods
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="articles.html" class="active">Articles</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="container" style="padding-top: 50px; padding-bottom: 20px;">
+        <div class="section-header" style="margin-bottom: 30px;">
+            <h2>Explore Kerala Recipes</h2>
+            <p>Search and filter authentic dishes to recreate the traditional food culture of God's Own Country.</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter Hub -->
+    <section class="container" style="padding-bottom: 40px;">
+        <div class="search-filter-wrapper">
+            <div class="search-box-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search" class="search-input" onkeyup="searchFood()" placeholder="Search recipes by name or ingredients...">
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-btn active" onclick="filterCategory('all', this)">All Recipes</button>
+                <button class="filter-btn" onclick="filterCategory('breakfast', this)">Breakfast</button>
+                <button class="filter-btn" onclick="filterCategory('breads', this)">Breads</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Grid -->
+    <section class="container">
+        <div id="recipes-grid" class="grid-recipes">
+            
+            <!-- Appam (Food 1) -->
+            <div class="card" data-category="breakfast">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breakfast</span>
+                    <img src="images/Food 1.jpg" alt="Appam">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 30 mins</span>
+                        <span>🔥 Easy</span>
+                    </div>
+                    <h3>Appam</h3>
+                    <p class="card-desc">Soft, fluffy rice pancakes with crispy edges, served traditionally with hot vegetable stew or egg curry.</p>
+                    <div class="card-footer">
+                        <a href="article/food1.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puttu (Food 2) -->
+            <div class="card" data-category="breakfast">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breakfast</span>
+                    <img src="images/Food 2.jpg" alt="Puttu">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 20 mins</span>
+                        <span>🔥 Medium</span>
+                    </div>
+                    <h3>Puttu</h3>
+                    <p class="card-desc">Steamed cylinders of ground rice and grated coconut, an iconic breakfast staple best paired with Kadala curry.</p>
+                    <div class="card-footer">
+                        <a href="article/food2.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Idli (Food 3) -->
+            <div class="card" data-category="breakfast">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breakfast</span>
+                    <img src="images/Food 3.jpg" alt="Idli">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 20 mins</span>
+                        <span>🔥 Easy</span>
+                    </div>
+                    <h3>Idli</h3>
+                    <p class="card-desc">Soft, spongy steamed rice and lentil cakes, perfect with hot sambar and fresh coconut chutney.</p>
+                    <div class="card-footer">
+                        <a href="article/food3.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dosa (Food 4) -->
+            <div class="card" data-category="breakfast">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breakfast</span>
+                    <img src="images/Food 4.jpg" alt="Dosa">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 15 mins</span>
+                        <span>🔥 Easy</span>
+                    </div>
+                    <h3>Dosa</h3>
+                    <p class="card-desc">Crispy, thin fermented rice and lentil crepe, ideal with warm sambar and spicy coconut chutney.</p>
+                    <div class="card-footer">
+                        <a href="article/food4.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Porotta (Food 5) -->
+            <div class="card" data-category="breads">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breads</span>
+                    <img src="images/Food 5.jpg" alt="Porotta">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 45 mins</span>
+                        <span>🔥 Hard</span>
+                    </div>
+                    <h3>Porotta</h3>
+                    <p class="card-desc">Flaky, layered soft flatbread that pairs perfectly with delicious beef dry fry, chicken curry, or vegetable kurma.</p>
+                    <div class="card-footer">
+                        <a href="article/food5.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Masala Dosa (Food 6) -->
+            <div class="card" data-category="breakfast">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breakfast</span>
+                    <img src="images/Food 6.jpg" alt="Masala Dosa">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 25 mins</span>
+                        <span>🔥 Medium</span>
+                    </div>
+                    <h3>Masala Dosa</h3>
+                    <p class="card-desc">Thin, crispy crepe filled with spiced, savory potato mash, served with coconut chutney and hot sambar.</p>
+                    <div class="card-footer">
+                        <a href="article/food6.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Idiyappam (Food 7) -->
+            <div class="card" data-category="breakfast">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breakfast</span>
+                    <img src="images/Food 7.jpg" alt="Idiyappam">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 30 mins</span>
+                        <span>🔥 Medium</span>
+                    </div>
+                    <h3>Idiyappam</h3>
+                    <p class="card-desc">Delicate steamed rice noodle nests, perfect with sweetened coconut milk or rich chicken curry.</p>
+                    <div class="card-footer">
+                        <a href="article/food7.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chappathi (Food 8) -->
+            <div class="card" data-category="breads">
+                <div class="card-img-wrapper">
+                    <span class="card-tag">Breads</span>
+                    <img src="images/Food 8.jpg" alt="Chappathi">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>⏱ 25 mins</span>
+                        <span>🔥 Easy</span>
+                    </div>
+                    <h3>Chappathi</h3>
+                    <p class="card-desc">Whole wheat flatbreads cooked on a hot tawa, a healthy and soft accompaniment for a variety of local curries.</p>
+                    <div class="card-footer">
+                        <a href="article/food8.html" class="card-btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>🌴 Kerala Foods</h3>
+                <p>Celebrating the vibrant tastes, aromatic spices, and rich food heritage of Kerala. Recreate authentic flavors right in your home kitchen.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Story</a></li>
+                    <li><a href="articles.html">Browse Recipes</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> keralafoods@gmail.com</p>
+                <p><strong>Phone:</strong> +91 8075093487</p>
+                <p><strong>Location:</strong> Kochi, Kerala, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kerala Foods. All rights reserved.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Success Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kerala Foods</title>
+    <meta name="description" content="Get in touch with Kerala Foods. Send us feedback, recipe suggestions, or inquiries. We would love to hear from you.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container" onclick="window.location.href='index.html'">
+            <span class="leaf">🌴</span> Kerala Foods
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Contact Page Container -->
+    <main class="page-container" style="padding-top: 50px;">
+        <section class="section-header" style="margin-bottom: 50px;">
+            <h2>Get in Touch</h2>
+            <p>Have questions about recipes, spice ratios, or want to collaborate? Send us a message and we'll get back to you shortly.</p>
+        </section>
+
+        <!-- Form and Sidebar Info Grid -->
+        <section class="contact-wrapper">
+            
+            <!-- Message Form -->
+            <div class="contact-card">
+                <h3 style="font-size: 1.6rem; margin-bottom: 25px; color: var(--primary);">Send Message</h3>
+                <form onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-textarea" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info Sidebar -->
+            <div class="info-sidebar">
+                
+                <!-- Email Info Card -->
+                <div class="info-item">
+                    <div class="info-icon">✉</div>
+                    <div class="info-details">
+                        <h4>Email Us</h4>
+                        <p>keralafoods@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Phone Info Card -->
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-details">
+                        <h4>Call Us</h4>
+                        <p>+91 8075093487</p>
+                    </div>
+                </div>
+
+                <!-- Location Info Card -->
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h4>Our Kitchen</h4>
+                        <p>Kochi, Kerala, India</p>
+                    </div>
+                </div>
+
+                <!-- Map placeholder or Social Note -->
+                <div class="info-item" style="flex-direction: column; align-items: flex-start; gap: 10px;">
+                    <h4 style="color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Active Hours</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 400; line-height: 1.5;">Monday - Saturday<br><strong>9:00 AM - 6:00 PM IST</strong></p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>🌴 Kerala Foods</h3>
+                <p>Celebrating the vibrant tastes, aromatic spices, and rich food heritage of Kerala. Recreate authentic flavors right in your home kitchen.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Story</a></li>
+                    <li><a href="articles.html">Browse Recipes</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> keralafoods@gmail.com</p>
+                <p><strong>Phone:</strong> +91 8075093487</p>
+                <p><strong>Location:</strong> Kochi, Kerala, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kerala Foods. All rights reserved.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Success Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
